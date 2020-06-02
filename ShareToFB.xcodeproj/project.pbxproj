@@ -13,9 +13,12 @@
 		998800E72482B9CC0027BD46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998800E52482B9CC0027BD46 /* Main.storyboard */; };
 		998800E92482B9CE0027BD46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998800E82482B9CE0027BD46 /* Assets.xcassets */; };
 		998800EC2482B9CE0027BD46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998800EA2482B9CE0027BD46 /* LaunchScreen.storyboard */; };
+		B3A9661AA29513BF9B747673 /* Pods_ShareToFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8651FE177A62E16C27EC37 /* Pods_ShareToFB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		534D10E1BFD7B28DBBF2EAEF /* Pods-ShareToFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareToFB.release.xcconfig"; path = "Target Support Files/Pods-ShareToFB/Pods-ShareToFB.release.xcconfig"; sourceTree = "<group>"; };
+		5D8651FE177A62E16C27EC37 /* Pods_ShareToFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareToFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		998800DC2482B9CC0027BD46 /* ShareToFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		998800DF2482B9CC0027BD46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		998800E12482B9CC0027BD46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		998800E82482B9CE0027BD46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		998800EB2482B9CE0027BD46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		998800ED2482B9CE0027BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34EBF76B45E9A0532862D07 /* Pods-ShareToFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareToFB.debug.xcconfig"; path = "Target Support Files/Pods-ShareToFB/Pods-ShareToFB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A9661AA29513BF9B747673 /* Pods_ShareToFB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3307F50C891890BD45CFC05A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8651FE177A62E16C27EC37 /* Pods_ShareToFB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B16F26DD4D89D0E6C1FEB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E34EBF76B45E9A0532862D07 /* Pods-ShareToFB.debug.xcconfig */,
+				534D10E1BFD7B28DBBF2EAEF /* Pods-ShareToFB.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		998800D32482B9CC0027BD46 = {
 			isa = PBXGroup;
 			children = (
 				998800DE2482B9CC0027BD46 /* ShareToFB */,
 				998800DD2482B9CC0027BD46 /* Products */,
+				6B16F26DD4D89D0E6C1FEB71 /* Pods */,
+				3307F50C891890BD45CFC05A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998800F02482B9CE0027BD46 /* Build configuration list for PBXNativeTarget "ShareToFB" */;
 			buildPhases = (
+				4FB083A8B735CF93CBCC99C6 /* [CP] Check Pods Manifest.lock */,
 				998800D82482B9CC0027BD46 /* Sources */,
 				998800D92482B9CC0027BD46 /* Frameworks */,
 				998800DA2482B9CC0027BD46 /* Resources */,
+				513D31E7B09CE1F5C7AD0987 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FB083A8B735CF93CBCC99C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareToFB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		513D31E7B09CE1F5C7AD0987 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareToFB/Pods-ShareToFB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareToFB/Pods-ShareToFB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShareToFB/Pods-ShareToFB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		998800D82482B9CC0027BD46 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		998800F12482B9CE0027BD46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34EBF76B45E9A0532862D07 /* Pods-ShareToFB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		998800F22482B9CE0027BD46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534D10E1BFD7B28DBBF2EAEF /* Pods-ShareToFB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
